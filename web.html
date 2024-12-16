@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLICK YOUR MOMENTS</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="homepage\logo.jpg" alt=""></a>
+        <p>CLICK YOUR MOMENTS</p>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <div class="header-btn">
+            <a href="login.html" class="login">login</a>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="text">
+            <h1><span>capture your</span> <br>frame</h1>
+            <p>welcome to our online photography</p>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="text">
+            <h1>About us</h1>
+            <p>Our mission is to enable people <br>
+            preserve their precious memories in true <br>
+                 to life quality.</p>
+        </div>
+        <div class="about-container">
+            <div class="box">
+                <div class="box-icon">
+                    <i class='bx bx-globe' ></i>
+                </div>
+                <h1><span>Explore</span></h1>
+                <br>
+                <p>Browse through our diverse pool of talented photographers, each with their unique style and expertise.</p>
+            </div>
+            <div class="box">
+                <div class="box-icon">
+                    <i class='bx bx-customize' ></i>               
+                 </div>
+                <h1><span>Customize</span></h1>
+                <br>
+                <p> Filter by location, event type, budget, or photography style to find the perfect match for your needs.</p>
+            </div>
+            <div class="box">
+                <div class="box-icon">
+                    <i class='bx bx-book' ></i>
+                </div>
+                <h1><span>Book</span></h1>
+                <br>
+                <p>Secure your photographer with just a few clicks, and enjoy seamless communication to plan the details of your session.</p>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="text">
+            <h1>our services</h1>
+            <p>Our photographers are available to <br>
+                <span><i><b></b>capture your moments</b></i></span> whenever and wherever you <br>
+                  need, offering flexible schedulingto fit <br>
+                 seamlessly into your plans</p>
+        </div>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>Event Photographers</h3>
+                <img src="services/event.jpg" alt="Event Photographers" class="service-image">
+                <p>Our event photographers capture every important moment, ensuring that your memories are preserved in high-quality images.</p>
+                <button class="book-now-btn">Book Now</button>
+            </div>
+        
+            <div class="service-card">
+                <h3>Outdoor Photographers</h3>
+                <img src="services/outdoor.jpg" alt="Outdoor Photographers" class="service-image">
+                <p>Our outdoor photographers are skilled in capturing the beauty of nature and outdoor events in a stunning way.</p>
+                <button class="book-now-btn">Book Now</button>
+
+            </div>
+        
+            <div class="service-card">
+                <h3>Indoor Photographers</h3>
+                <img src="services/indoor1.jpg" alt="Indoor Photographers" class="service-image">
+                <p>Indoor photography that brings out the best lighting and angles for your indoor events or portraits.</p>
+                <button class="book-now-btn">Book Now</button>
+
+            </div>
+        </div>
+        
+    </section>
+    <section class="contact" id="contact">
+        <div class="text">
+            <h1>Contact Info</h1>
+            <p>If you're a photographer interested in joining us or have inquiries, please fill out the form below:</p>
+        </div>
+        <form action="submit_form.php" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+    <section class="reviews" id="reviews">
+        <div class="text">
+            <h1>Reviews</h1>
+            <p>Rate and share your feedback on our photographers' work. Choose one of the photographers below and let us know your thoughts!</p>
+        </div>
+    
+        <!-- Reviews container (3-column layout) -->
+        <div class="reviews-container">
+            <!-- Review Card for Event Photographer -->
+            <div class="review-card">
+                <h2>Event Photographer</h2>
+                <form action="submit_review.php" method="post" class="review-form">
+                    <label for="event-rating">Rating (1 to 5 stars):</label>
+                    <div class="rating">
+                        <input type="radio" id="event-5" name="event-rating" value="5"><label for="event-5">★</label>
+                        <input type="radio" id="event-4" name="event-rating" value="4"><label for="event-4">★</label>
+                        <input type="radio" id="event-3" name="event-rating" value="3"><label for="event-3">★</label>
+                        <input type="radio" id="event-2" name="event-rating" value="2"><label for="event-2">★</label>
+                        <input type="radio" id="event-1" name="event-rating" value="1"><label for="event-1">★</label>
+                    </div>
+    
+                    <label for="event-review">Your Review:</label>
+                    <textarea id="event-review" name="event-review" placeholder="Write your review here..." required></textarea>
+    
+                    <button type="submit" class="submit-review-btn">Submit Review</button>
+                </form>
+            </div>
+    
+            <!-- Review Card for Outdoor Photographer -->
+            <div class="review-card">
+                <h2>Outdoor Photographer</h2>
+                <form action="submit_review.php" method="post" class="review-form">
+                    <label for="outdoor-rating">Rating (1 to 5 stars):</label>
+                    <div class="rating">
+                        <input type="radio" id="outdoor-5" name="outdoor-rating" value="5"><label for="outdoor-5">★</label>
+                        <input type="radio" id="outdoor-4" name="outdoor-rating" value="4"><label for="outdoor-4">★</label>
+                        <input type="radio" id="outdoor-3" name="outdoor-rating" value="3"><label for="outdoor-3">★</label>
+                        <input type="radio" id="outdoor-2" name="outdoor-rating" value="2"><label for="outdoor-2">★</label>
+                        <input type="radio" id="outdoor-1" name="outdoor-rating" value="1"><label for="outdoor-1">★</label>
+                    </div>
+    
+                    <label for="outdoor-review">Your Review:</label>
+                    <textarea id="outdoor-review" name="outdoor-review" placeholder="Write your review here..." required></textarea>
+    
+                    <button type="submit" class="submit-review-btn">Submit Review</button>
+                </form>
+            </div>
+    
+            <!-- Review Card for Indoor Photographer -->
+            <div class="review-card">
+                <h2>Indoor Photographer</h2>
+                <form action="submit_review.php" method="post" class="review-form">
+                    <label for="indoor-rating">Rating (1 to 5 stars):</label>
+                    <div class="rating">
+                        <input type="radio" id="indoor-5" name="indoor-rating" value="5"><label for="indoor-5">★</label>
+                        <input type="radio" id="indoor-4" name="indoor-rating" value="4"><label for="indoor-4">★</label>
+                        <input type="radio" id="indoor-3" name="indoor-rating" value="3"><label for="indoor-3">★</label>
+                        <input type="radio" id="indoor-2" name="indoor-rating" value="2"><label for="indoor-2">★</label>
+                        <input type="radio" id="indoor-1" name="indoor-rating" value="1"><label for="indoor-1">★</label>
+                    </div>
+    
+                    <label for="indoor-review">Your Review:</label>
+                    <textarea id="indoor-review" name="indoor-review" placeholder="Write your review here..." required></textarea>
+    
+                    <button type="submit" class="submit-review-btn">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </section>
+ 
+</body>
+</html>
