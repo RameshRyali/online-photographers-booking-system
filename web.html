@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLICK YOUR MOMENTS</title>
     <link rel="stylesheet" href="web.css">
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
-<body>
+<body>  
     <header>
         <a href="#" class="logo"><img src="homepage\logo.jpg" alt=""></a>
         <p>CLICK YOUR MOMENTS</p>
@@ -25,15 +25,15 @@
     </header>
     <section class="home" id="home">
         <div class="text">
-            <h1><span>capture your</span> <br>frame</h1>
+            <h1><span>Capture your</span> <br>frame</h1>
             <p>welcome to our online photography</p>
         </div>
     </section>
     <section class="about" id="about">
         <div class="text">
             <h1>About us</h1>
-            <p>Our mission is to enable people <br>
-            preserve their precious memories in true <br>
+            <p>Our mission is to enable people 
+            preserve their precious memories in true
                  to life quality.</p>
         </div>
         <div class="about-container">
@@ -66,9 +66,9 @@
     <section class="services" id="services">
         <div class="text">
             <h1>our services</h1>
-            <p>Our photographers are available to <br>
-                <span><i><b></b>capture your moments</b></i></span> whenever and wherever you <br>
-                  need, offering flexible schedulingto fit <br>
+            <p>Our photographers are available to 
+                <span><i><b></b>capture your moments</b></i></span> whenever and wherever you 
+                  need, offering flexible scheduling to fit 
                  seamlessly into your plans</p>
         </div>
         <div class="services-container">
@@ -122,75 +122,84 @@
             <button type="submit" class="btn">Submit</button>
         </form>
     </section>
-    <section class="reviews" id="reviews">
-        <div class="text">
+
+    <section id="reviews">
+        <div class="reviews">
             <h1>Reviews</h1>
-            <p>Rate and share your feedback on our photographers' work. Choose one of the photographers below and let us know your thoughts!</p>
         </div>
-    
-        <!-- Reviews container (3-column layout) -->
-        <div class="reviews-container">
-            <!-- Review Card for Event Photographer -->
-            <div class="review-card">
-                <h2>Event Photographer</h2>
-                <form action="submit_review.php" method="post" class="review-form">
-                    <label for="event-rating">Rating (1 to 5 stars):</label>
-                    <div class="rating">
-                        <input type="radio" id="event-5" name="event-rating" value="5"><label for="event-5">★</label>
-                        <input type="radio" id="event-4" name="event-rating" value="4"><label for="event-4">★</label>
-                        <input type="radio" id="event-3" name="event-rating" value="3"><label for="event-3">★</label>
-                        <input type="radio" id="event-2" name="event-rating" value="2"><label for="event-2">★</label>
-                        <input type="radio" id="event-1" name="event-rating" value="1"><label for="event-1">★</label>
+        <div class="review-container">
+
+            <div class="review-section" id="review">
+                <h2>Outdoor Photography</h2>
+                <img src="reviews\outdoor.jpg" alt="">
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">J</div>
+                            <div class="reviewer-name">Jonathan Luciani</div>
+                        </div>
+                        <div class="review-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="review-date">10 months ago</div>
+                        </div>
                     </div>
-    
-                    <label for="event-review">Your Review:</label>
-                    <textarea id="event-review" name="event-review" placeholder="Write your review here..." required></textarea>
-    
-                    <button type="submit" class="submit-review-btn">Submit Review</button>
-                </form>
-            </div>
-    
-            <!-- Review Card for Outdoor Photographer -->
-            <div class="review-card">
-                <h2>Outdoor Photographer</h2>
-                <form action="submit_review.php" method="post" class="review-form">
-                    <label for="outdoor-rating">Rating (1 to 5 stars):</label>
-                    <div class="rating">
-                        <input type="radio" id="outdoor-5" name="outdoor-rating" value="5"><label for="outdoor-5">★</label>
-                        <input type="radio" id="outdoor-4" name="outdoor-rating" value="4"><label for="outdoor-4">★</label>
-                        <input type="radio" id="outdoor-3" name="outdoor-rating" value="3"><label for="outdoor-3">★</label>
-                        <input type="radio" id="outdoor-2" name="outdoor-rating" value="2"><label for="outdoor-2">★</label>
-                        <input type="radio" id="outdoor-1" name="outdoor-rating" value="1"><label for="outdoor-1">★</label>
+                    <div class="description">"Veronika's outdoor photography is truly magical. She has an incredible eye for finding the perfect light and locations. We did our pre-wedding shoot in a beautiful park, and she knew exactly where to position us to capture the golden hour light."</div>
+                </div>
+                </div>
+
+            <div class="review-section" id="review">
+                <h2>Indoor Photography</h2>
+                <img src="reviews\indoor.jpg" alt="">
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">A</div>
+                            <div class="reviewer-name">Amanda Davis</div>
+                        </div>
+                        <div class="review-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="review-date">5 months ago</div>
+                        </div>
                     </div>
-    
-                    <label for="outdoor-review">Your Review:</label>
-                    <textarea id="outdoor-review" name="outdoor-review" placeholder="Write your review here..." required></textarea>
-    
-                    <button type="submit" class="submit-review-btn">Submit Review</button>
-                </form>
+                    <div class="description">"vscclicks did an amazing job with our family portraits in our home. She was patient with the kids and captured some truly special moments."</div>
+                </div>
             </div>
-    
-            <!-- Review Card for Indoor Photographer -->
-            <div class="review-card">
-                <h2>Indoor Photographer</h2>
-                <form action="submit_review.php" method="post" class="review-form">
-                    <label for="indoor-rating">Rating (1 to 5 stars):</label>
-                    <div class="rating">
-                        <input type="radio" id="indoor-5" name="indoor-rating" value="5"><label for="indoor-5">★</label>
-                        <input type="radio" id="indoor-4" name="indoor-rating" value="4"><label for="indoor-4">★</label>
-                        <input type="radio" id="indoor-3" name="indoor-rating" value="3"><label for="indoor-3">★</label>
-                        <input type="radio" id="indoor-2" name="indoor-rating" value="2"><label for="indoor-2">★</label>
-                        <input type="radio" id="indoor-1" name="indoor-rating" value="1"><label for="indoor-1">★</label>
+
+            <div class="review-section" id="review">
+                <h2>Event Photography</h2>
+                <img src="reviews\event.jpg" alt="">
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">M</div>
+                            <div class="reviewer-name">Michael Brown</div>
+                        </div>
+                        <div class="review-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="review-date">1 year ago</div>
+                        </div>
                     </div>
-    
-                    <label for="indoor-review">Your Review:</label>
-                    <textarea id="indoor-review" name="indoor-review" placeholder="Write your review here..." required></textarea>
-    
-                    <button type="submit" class="submit-review-btn">Submit Review</button>
-                </form>
+                    <div class="description">"Prasanth is an amazing event photographer. She has a way of capturing the emotion and excitement of the moment. I highly recommend her for any type of event photography."</div>
+                </div>
             </div>
+
         </div>
     </section>
- 
-</body>
-</html>

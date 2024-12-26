@@ -73,7 +73,7 @@ header{
     left: 0;
     transition: 0.3s;
 }
-.navbar a::after:hover{
+.navbar a.active::after{
     width: 100%;
     text-decoration: underline;
     background: var(--second-color);
@@ -102,6 +102,7 @@ header{
 
     .text h1{
         font-size: 3.5rem;
+        padding-right: 200px;
         letter-spacing: 2px;
         color: rgb(214, 40, 40);
         
@@ -110,11 +111,9 @@ header{
         color:black;
         
     }
-    .span::first-letter{
-        color: rgb(5, 41, 53);
-        font-size: 200%;
-        font-weight: bold;
-
+    h1 span::first-letter {
+        color: red; /* Change 'red' to your desired color */
+        font-size: 2em; /* Optional: Adjust the size if needed */
     }
      .text p{
         margin: 00.5rem 0 1rem;
@@ -141,7 +140,7 @@ header{
         padding: 10px;
         border-radius: 1rem;
         box-shadow: 1px 4px 41px rgba(0,0,0,0.1);
-        background:rgb(125, 90, 158);
+        background:rgb(202, 202, 202);
     }
     .about-container .box .bx{
         font-size: 34px;
@@ -164,7 +163,8 @@ header{
 
 .service-card {
     width: 30%;
-    background-color: #fff;
+    background-color: rgb(206, 135, 174);
+    padding: 20px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -179,7 +179,7 @@ header{
 
 .service-card h3 {
     font-size: 1.5em;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .service-card .service-image {
@@ -196,7 +196,7 @@ header{
 .service-card p {
     padding: 20px;
     font-size: 1em;
-    color: #555;
+    color:white;
     line-height: 1.5;
 }
 
@@ -214,18 +214,18 @@ body {
 section.contact {
     background-color:white;
     padding: 40px 20px;
-    text-align: center;
+   text-align: left;
 }
 
 .contact .text h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    color: rgb(214, 40, 40);
 }
 
 .contact .text p {
     font-size: 1.2em;
-    color: rgb(163, 48, 48);
+    color: rgb(48, 163, 96);
     margin-bottom: 30px;
 }
 
@@ -280,99 +280,82 @@ section.contact {
 .contact-form .btn:hover {
     background: #474040;
 }
-/* General styling for the reviews section */
-.reviews {
-    padding: 40px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
 
-.reviews .text h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+/* reviews */
+.reviews h1{
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    color: rgb(214, 40, 40);
 }
-
-.reviews .text p {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 40px;
+.review-container img{
+    width: 300px;
+    height: 200px;
+    
 }
-
-/* Container to make the reviews section display in 3 columns */
-.reviews-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Allows the cards to wrap on smaller screens */
-    gap: 20px;
-}
-
-/* Styling for each review card */
-.review-card {
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
+.review-item {
+    height:230px;
+    margin-bottom: 20px; /* Space between reviews */
+    padding: 15px;
+    border: 1px solid #eee;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 350px; /* Adjust the card width */
-    text-align: left;
+    background-color:rgb(125, 90, 158);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.review-card h2 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-    color: #333;
+.review-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
-.review-card .rating {
+.reviewer-info {
+    display: flex;
+    align-items: center;
+}
+
+.reviewer-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
 }
 
-.review-card .rating input {
-    display: none;
+.reviewer-name {
+    font-weight: bold;
+    width:25%;
 }
 
-.review-card .rating label {
-    font-size: 30px;
-    color: #ccc;
-    cursor: pointer;
-    margin: 0 5px;
+.review-meta {
+    display: flex;
+   flex-direction: row;
+   justify-content:space-between;
+    font-size: 0.9em;
+    color:white;
 }
-
-.review-card .rating input:checked ~ label {
-    color: #f5b301;
+.rating{
+    margin-bottom: 10px;
+    color: #f0ad4e; /* Gold color for stars */
 }
-
-.review-card .rating input:checked ~ label ~ label {
-    color: #f5b301;
+.rating i{
+    margin: 0 2px;
 }
-
-/* Textarea for review input */
-.review-form textarea {
-    width: 100%;
-    height: 120px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 1em;
-    resize: none;
+.review-container{
+    display: flex;
+    flex-direction: row;
 }
-
-/* Button to submit review */
-.submit-review-btn {
-    padding: 10px 20px;
-    font-size: 1.1em;
+#review{
+    width:500px;
+    
+}
+.review-section{
+    margin-right: 20px;
+}
+.description{
     color: white;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
 }
-
-.submit-review-btn:hover {
-    background-color: #0056b3;
-}
+/* ... (rest of your CSS) */
