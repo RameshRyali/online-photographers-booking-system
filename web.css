@@ -27,7 +27,7 @@ html::-webkit-scrollbar-track{
     background: transparent;
 }
 html::-webkit-scrollbar-thumb{
-    background: var(--text-color);
+    background: var(--second-color);
     border-radius: 0.5rem;
 }
 section{
@@ -87,39 +87,54 @@ header{
 .header-btn a:hover{
     background:violet;
 }
-.home{
+.photos {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    }
+
+    .cont {
+        display: grid;
+        grid-template-areas:
+            "img1 img2"
+            "img3 img2"
+            "img4 img5"
+            "img6 img7";
+        gap: 10px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 100%; 
+    }
+/* .home{
     width: 100%;
     min-height: 100vh;
     position: relative;
-    background-image: url("homepage/image1.jpg"); 
+    background-image: url(); 
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
+} */
+.text {
+    text-align: center;
+    padding: 50px 20px;
 }
-
-    .text h1{
-        font-size: 3.5rem;
-        padding-right: 200px;
-        letter-spacing: 2px;
-        color: rgb(214, 40, 40);
-        
-    }
-    .text span{
-        color:black;
-        
-    }
-    h1 span::first-letter {
-        color: red; /* Change 'red' to your desired color */
-        font-size: 2em; /* Optional: Adjust the size if needed */
-    }
-     .text p{
-        margin: 00.5rem 0 1rem;
-        color:rgb(143, 184, 143);
-
-    }
+.text h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+.text p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+}
     .about{
         background:white;
     }
@@ -288,7 +303,7 @@ section.contact {
     color: rgb(214, 40, 40);
 }
 .review-container img{
-    width: 300px;
+    width: 450px;
     height: 200px;
     
 }
@@ -358,4 +373,122 @@ section.contact {
 .description{
     color: white;
 }
+
+.foot {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    padding: 40px 20px;
+    background-color: #000;
+}
+.explore-more {
+    text-align: center;
+    padding: 20px 0;
+}
+.explore{
+    background-color: #000;
+    color: white;
+}
+.explore-more h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.explore-more p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.explore-more button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+.footer-content {
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+.footer-content div {
+    flex: 1;
+    padding: 0 20px;
+}
+.footer-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.stay-updated form {
+    display: flex;
+    flex-direction: column;
+}
+.stay-updated input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    background-color: #000;
+    color: #fff;
+}
+.stay-updated button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+}
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+.footer-bottom ul li {
+    display: inline;
+    margin-right: 10px;
+}
+.footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.social-media {
+    margin-top: 20px;
+}
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+.social-media a img {
+    width: 24px;
+    height: 24px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
 /* ... (rest of your CSS) */
