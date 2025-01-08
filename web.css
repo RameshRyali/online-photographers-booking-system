@@ -407,7 +407,7 @@ img {
 }
 
 footer {
-    padding: 40px 20px;
+    padding: 5px 10px;
     background-color:black;
 }
 
@@ -425,12 +425,12 @@ footer {
 .footer-bottom ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0 0;
+    margin: 5px 0 0 0;
 }
 
 .footer-bottom ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .footer-bottom ul li a {
@@ -439,11 +439,11 @@ footer {
 }
 
 .social-media {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .social-media a {
-    margin: 0 10px;
+    margin: 0 5px;
     text-decoration: none;
 }
 
