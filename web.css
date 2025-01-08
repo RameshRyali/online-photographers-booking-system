@@ -13,6 +13,14 @@ p {
     color:black;
     font-weight:bolder;
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 :root {
     --main-color: violet;
@@ -37,17 +45,22 @@ html::-webkit-scrollbar-thumb {
 
 section {
     padding: 50px 75px;
-
 }
-
 header {
     position: fixed;
     width: 100%;
-    height:5%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: rgb(0, 0, 0);
+    color: white;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+.para p{
     color: white;
 }
 
@@ -57,41 +70,52 @@ header {
 
 .navbar {
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-.navbar li a{
+
+.navbar li {
     position: relative;
-    font-size: 1rem;
+}
+
+.navbar a {
+    font-size: 20px;
     padding: 10px 20px;
     color: #fff;
     font-weight: bold;
+    text-decoration: none;
 }
+
 .navbar a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: var(--text-color);
+    background: #fff;
     position: absolute;
     bottom: -4px;
     left: 0;
     transition: 0.3s;
-    
 }
 
-.navbar a.active::after {
+.navbar a:hover::after {
     width: 100%;
-    text-decoration: underline;
-    background: var(--second-color);
-
+    background: #5a67d8;
 }
 
-.header-btn a{
+
+.header-btn a {
     background: white;
     color: black;
     border-radius: 0.5rem;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .header-btn a:hover {
-    background: violet;
+    background: #5a67d8;
+    color: white;
 }
 
 /* .photos{
@@ -122,6 +146,7 @@ img {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 20px;
+    margin-top: 50px;
     color: #3d3131;
 }
 .text p {
@@ -186,7 +211,6 @@ img {
 .service-card {
     width: 30%;
     background: rgb(215, 174, 136);
-    ;
     padding: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -277,13 +301,6 @@ img {
     margin: 10px 0;
 }
 
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-
-}
 /* reviews */
 .reviews h1 {
     font-size: 36px;
@@ -376,14 +393,14 @@ body {
 .foot {
     font-family: 'Roboto', sans-serif;
     background-color:white;
-    color:black;
+    color:rgb(118, 109, 109);
     margin: 0;
     padding: 0;
 }
 
 footer {
     padding: 40px 20px;
-    background-color:white;
+    background-color:black;
 }
 
 .footer-bottom {
